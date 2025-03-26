@@ -21,7 +21,7 @@ void find_student_positions(int n, std::vector<int>& heights, int k, std::vector
                 }else if(heights[mid] > queries[k]){
                     hi = mid-1;
                 }else{
-                    lo = mid;
+                    lo = mid+1;
                 }
             }
             if(!results[k]){
